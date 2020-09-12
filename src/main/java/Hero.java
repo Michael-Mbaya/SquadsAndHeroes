@@ -47,6 +47,30 @@ public class Hero {
     public static void clearAllHeroes() {
         instances.clear();
     }
+    //find a Hero instance
+    public static Hero findHeroById(int id) {
+        return instances.get(id - 1);
+    }
+//        try {
+//            return instances.get(id - 1);
+//        } catch (IndexOutOfBoundsException exception) {
+//            return null;
+//        }
+
+    //find Hero instance by name
+//    public static boolean findHeroByName(String name)
+//    {
+//        boolean isAvailable = false;
+//        for (int i =0; i<instances.size(); i++)
+//        {
+//            if (name.equalsIgnoreCase(instances.get(i).name) )
+//            {
+//                isAvailable = true;
+//            }
+//        }
+//
+//        return isAvailable;
+//    }
 
 
 }

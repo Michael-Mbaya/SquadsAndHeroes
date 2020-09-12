@@ -77,4 +77,11 @@ public class HeroTest {
         assertEquals(0, Hero.getAllHeroes().size());
     }
 
+    @Test
+    public void findHeroById_returnsHeroWithSameId_secondHero() {
+        Hero hero = setNewHero();
+        assertEquals(Hero.findHeroById(hero.getId()),hero);
+    }
+
+
 }

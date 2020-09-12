@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HeroTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-12T15:18:42" hostname="moringa-ThinkPad-X250" time="0.002">
+<testsuite name="HeroTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-12T19:50:28" hostname="moringa-ThinkPad-X250" time="0.002">
   <properties/>
-  <testcase name="clearAllHeroes_HeroClearAllInstances_true" classname="HeroTest" time="0.002"/>
+  <testcase name="findHeroById_returnsHeroWithSameId_secondHero" classname="HeroTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
