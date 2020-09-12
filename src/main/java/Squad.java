@@ -39,7 +39,7 @@ public class Squad {
         return instances;
     }
     //clear all Squad instances
-    public static void clearAll() {
+    public static void clearAllSquads() {
         instances.clear();
     }
 
