@@ -8,7 +8,7 @@ public class Hero {
     private String specialPower;
     private  String weakness;
     private static List<Hero> instances = new ArrayList<Hero>();
-    private int Id;
+    private int id;
 
         //Hero constructor
         public Hero(String name, int age, String specialPower, String weakness) {
@@ -17,7 +17,7 @@ public class Hero {
             this.specialPower = specialPower;
             this.weakness = weakness;
             instances.add(this);
-            Id = instances.size();
+            this.id = instances.size();
         }
     //getter for Hero name
     public String getName() {
@@ -36,12 +36,12 @@ public class Hero {
         return weakness;
     }
     //getter/return Hero instances
-    public static List<Hero> getInstances() {
+    public static List<Hero> getAllHeroes() {
         return instances;
     }
     //getter for a Hero id
     public int getId() {
-        return Id;
+        return id;
     }
     //method to delete all Hero instances (Haha! #Evil Laugh)
     public static void clearAllHeroes() {

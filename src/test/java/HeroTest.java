@@ -25,15 +25,15 @@ public class HeroTest {
     public void AllHeroesAreCorrectlyReturned_true() {
         Hero hero = setNewHero();
         Hero otherHero = new Hero("other me",25,"sleep","Mornings");
-        assertEquals(2,Hero.getInstances().size());
+        assertEquals(2,Hero.getAllHeroes().size());
     }
 
     @Test   //see if Hero objects contains some instances
     public void Hero_ContainsHeroesInstances_true() {
         Hero hero = setNewHero();
         Hero otherHero = new Hero("other me",25,"sleep","Mornings");
-        assertTrue(Hero.getInstances().contains(hero));
-        assertTrue(Hero.getInstances().contains(otherHero));
+        assertTrue(Hero.getAllHeroes().contains(hero));
+        assertTrue(Hero.getAllHeroes().contains(otherHero));
     }
 
     @Test
@@ -66,6 +66,15 @@ public class HeroTest {
         Hero otherHero = new Hero("other me",25,"sleep","Mornings");
         assertEquals(1, hero.getId());
         assertEquals(2,otherHero.getId());
+    }
+
+    @Test
+    public void clearAllHeroes_HeroClearAllInstances_true() throws Exception{
+        Hero hero = setNewHero();
+        Hero otherHero = new Hero("other me",25,"sleep","Mornings");
+        assertEquals(2,Hero.getAllHeroes().size());
+        Hero.clearAllHeroes();
+        assertEquals(0, Hero.getAllHeroes().size());
     }
 
 }

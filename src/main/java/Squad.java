@@ -35,7 +35,7 @@ public class Squad {
         return id;
     }
     //getter/return list of Squad Instances
-    public static List<Squad> all() {
+    public static List<Squad> getAllSquads() {
         return instances;
     }
     //clear all Squad instances
