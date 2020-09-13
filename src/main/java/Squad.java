@@ -11,13 +11,13 @@ public class Squad {
     private List<Hero> squadHeroes;
 
         //constructor for Squad
-    public Squad(int maxSize, String squadName, String squadCause) {
+    public Squad(int maxSize, String name, String cause) {
         this.maxSize = maxSize;
-        this.name = squadName;
-        this.cause = squadCause;
+        this.name = name;
+        this.cause = cause;
         instances.add(this);
         this.id = instances.size();
-        this.squadHeroes = new ArrayList<Hero>();
+        this.squadHeroes = new ArrayList<>();
     }
 
     //getter for a Squad size(members are Hero's)
@@ -37,7 +37,7 @@ public class Squad {
         return id;
     }
     //method to find a Squad instance
-    public static Squad find(int id) {
+    public static Squad findSquad(int id) {
         return instances.get(id - 1);
     }
     //getter/return list of Squad Instances
@@ -67,6 +67,16 @@ public class Squad {
             }
         }
         return exists;
+    }
+
+    public void update(int maxSize,String name,String cause) {
+        this.name = name;
+        this.cause = cause;
+        this.maxSize = maxSize;
+    }
+
+    public void deleteSquad(){
+        instances.remove(id-1);
     }
 
 }

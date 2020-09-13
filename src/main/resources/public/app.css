@@ -1,8 +1,23 @@
-*{
+div{
     overflow: hidden;
 }
+
+body{
+    height:100%;
+    width:100%;
+}
+
 @media (min-width: 768px){
 .navbar {
     border-radius: 0px;
+    }
 }
+
+th{
+    text-align:center;
+}
+
+i{
+    margin-right:3px;
+    margin-left:3px;
 }
