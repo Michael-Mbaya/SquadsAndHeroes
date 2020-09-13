@@ -22,10 +22,6 @@ i{
     margin-left:3px;
 }
 
-.contents{
-    height:100%;
- }
-
  body{
     background-image:url("/images/comics.jpg");
     background-repeat: no-repeat;
@@ -36,14 +32,14 @@ i{
 body {
     position: relative;
     min-height: 100%;
-    margin: 0 0 100px; /* bottom = footer height */
+    margin: 0 0 80px; /* bottom = footer height */
 }
 
 .footer {
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
-    height: 100px;
+    height: 80px;
     width: 100%;
 }
 
