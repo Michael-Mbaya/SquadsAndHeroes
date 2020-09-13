@@ -21,3 +21,34 @@ i{
     margin-right:3px;
     margin-left:3px;
 }
+
+.contents{
+    height:100%;
+ }
+
+ body{
+    background-image:url("/images/comics.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0 0 100px; /* bottom = footer height */
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.hero-card{
+    background-image: url(/images/hero-background.jpg);
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}

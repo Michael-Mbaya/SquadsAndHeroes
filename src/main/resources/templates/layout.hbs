@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{#block "title"}}Hero Squad{{/block}}</title>
+    <title>{{#block "title"}}Squad of Heroes{{/block}}</title>
+    <link rel="shortcut icon" href="/images/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/images/favicon.png" sizes="32x32" type="image/png">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/app.css">
@@ -14,8 +16,10 @@
 <div>
 
 </div>
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">NavBar</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">
+        <img src="/images/favicon.png" style="height:50px;width:50px;">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -36,9 +40,15 @@
     </div>
 </nav>
 
-<div class="container bg-secondary">
+<div class="container bg-secondary contents">
     {{#block "content"}}
     {{/block}}
+</div>
+
+<div class="footer text-center bg-dark p-3" id="contact">
+    <div class="container">
+    <p class=" text-white lead">Copyright &copy; Michael-Mbaya</p>
+    </div>
 </div>
 
     </body>
