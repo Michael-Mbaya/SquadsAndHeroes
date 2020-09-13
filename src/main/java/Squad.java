@@ -4,20 +4,20 @@ import java.util.List;
 public class Squad {
 
     private int maxSize;
-    private String name;
+    private String squadName;
     private String cause;
-    private static List<Squad> instances = new ArrayList<Squad>();
+    private static ArrayList<Squad> instances = new ArrayList<Squad>();
     private int id;
-    private List<Hero> squadHeroes;
+    private List<Hero> squadMember = new ArrayList<>();
 
         //constructor for Squad
     public Squad(int maxSize, String name, String cause) {
         this.maxSize = maxSize;
-        this.name = name;
+        this.squadName = name;
         this.cause = cause;
         instances.add(this);
         this.id = instances.size();
-        this.squadHeroes = new ArrayList<>();
+//        this.squadMembers = new ArrayList<>();
     }
 
     //getter for a Squad size(members are Hero's)
@@ -26,7 +26,7 @@ public class Squad {
     }
     //getter for a Squad name
     public String getName() {
-        return name;
+        return squadName;
     }
     //getter for a Squad cause
     public String getCause() {
@@ -50,11 +50,11 @@ public class Squad {
     }
     //getter/return list of Squad Hero/Heroes
     public List<Hero> getSquadHeroes() {
-        return squadHeroes;
+        return squadMember;
     }
     //method to add a Squad's Hero/Heroes
     public void addHero(Hero hero) {
-        squadHeroes.add(hero);
+        squadMember.add(hero);
     }
     //check if a squadHero is in another Squad
     public static boolean heroAlreadyExists(Hero newHero) {
@@ -69,8 +69,8 @@ public class Squad {
         return exists;
     }
 
-    public void update(int maxSize,String name,String cause) {
-        this.name = name;
+    public void update(int maxSize,String squadName,String cause) {
+        this.squadName = squadName;
         this.cause = cause;
         this.maxSize = maxSize;
     }

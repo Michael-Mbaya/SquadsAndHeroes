@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HeroTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-09-12T23:25:05" hostname="moringa-ThinkPad-X250" time="0.006">
+<testsuite name="HeroTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-09-13T09:08:33" hostname="moringa-ThinkPad-X250" time="0.007">
   <properties/>
-  <testcase name="HeroInstantiatesWithName_true" classname="HeroTest" time="0.0"/>
-  <testcase name="HeroInstantiatesWithSpecialPower_true" classname="HeroTest" time="0.001"/>
+  <testcase name="HeroInstantiatesWithName_true" classname="HeroTest" time="0.001"/>
+  <testcase name="HeroInstantiatesWithSpecialPower_true" classname="HeroTest" time="0.0"/>
   <testcase name="creates_instanceOfHero_true" classname="HeroTest" time="0.0"/>
   <testcase name="findHeroById_returnsHeroWithSameId_secondHero" classname="HeroTest" time="0.0"/>
   <testcase name="HeroInstantiatesWithAge_true" classname="HeroTest" time="0.001"/>
-  <testcase name="Hero_ContainsHeroesInstances_true" classname="HeroTest" time="0.0"/>
+  <testcase name="Hero_ContainsHeroesInstances_true" classname="HeroTest" time="0.001"/>
   <testcase name="getId_HeroesInstantiateWithAnID_1" classname="HeroTest" time="0.0"/>
-  <testcase name="clearAllHeroes_HeroClearAllInstances_true" classname="HeroTest" time="0.0"/>
+  <testcase name="clearAllHeroes_HeroClearAllInstances_true" classname="HeroTest" time="0.001"/>
   <testcase name="HeroInstantiatesWithWeakness_true" classname="HeroTest" time="0.0"/>
   <testcase name="AllHeroesAreCorrectlyReturned_true" classname="HeroTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
