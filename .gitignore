@@ -112,12 +112,5 @@ build/
 .idea/
 gradle/
 gradlew*
-settings.gradle.gradle/5.2.1/vcsMetadata-1/
-build/generated/
-build/tmp/compileJava/
-build/tmp/compileTestJava/
-src/test/resources/
-target/archive-tmp/
-target/generated-sources/
-target/heroku/app/target/archive-tmp/
-target/heroku/app/target/generated-sources/
+settings.gradle
+target
