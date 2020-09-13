@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="models.SquadTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-09-13T11:02:46" hostname="moringa-ThinkPad-X250" time="0.006">
+  <properties/>
+  <testcase name="updateChangesSquadsquadName" classname="models.SquadTest" time="0.002"/>
+  <testcase name="getId_squadInstantiatesWithAnID_1" classname="models.SquadTest" time="0.0"/>
+  <testcase name="mySquadGetsCause_Peace" classname="models.SquadTest" time="0.0"/>
+  <testcase name="SquadInstantiatesWithName_true" classname="models.SquadTest" time="0.001"/>
+  <testcase name="SquadIntantiatesCorrectly_true" classname="models.SquadTest" time="0.0"/>
+  <testcase name="updateChangesSquad" classname="models.SquadTest" time="0.0"/>
+  <testcase name="deleteDeleteSpecificSquad" classname="models.SquadTest" time="0.0"/>
+  <testcase name="AllSquadsContainsAllSquads_true" classname="models.SquadTest" time="0.0"/>
+  <testcase name="mySquadGetsMaxSize_3" classname="models.SquadTest" time="0.0"/>
+  <testcase name="AllSquadsAreCorrectlyReturned_true" classname="models.SquadTest" time="0.0"/>
+  <testcase name="findReturnsCorrectSquadWhenMoreThanOneSquadExists_2" classname="models.SquadTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

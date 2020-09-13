@@ -1,0 +1,44 @@
+{{#partial "content"}}
+    <div class="container">
+        <h1 class="text-center">{{squad.squadName}}</h1>
+
+        <div class="row">
+            {{#if foundSquad}}
+                {{#each foundSquad.squadMembers}}
+                    <div class="col-md-6 text-center">
+                        <!-- Card -->
+                        <div class="card card-image" style="background-image: url(/images/hero-background.jpg);">
+
+                            <!-- Content -->
+                            <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                                <div>
+
+                                    <h3 class="card-title pt-2"><strong>{{name}}</strong></h3>
+                                    <p>Age : {{age}}</p>
+                                    <p>Special Power : {{specialPower}}</p>
+                                    <p>Weakness : {{weakness}}</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+
+                    </div>
+                {{/each}}
+            {{else}}
+                <div class="container">
+                    <h1 class="text-center">No Heroes</h1>
+
+                </div>
+            {{/if}}
+
+        </div>
+
+
+
+    </div>
+
+{{/partial}}
+
+{{> layout.hbs}}
