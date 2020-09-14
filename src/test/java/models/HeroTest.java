@@ -15,8 +15,8 @@ public class HeroTest {
     }
 
     @Test
-    public void HeroInstantiatesCorrectly_true() throws Exception {
-        Hero myHero = new Hero("CatWoman", 23, "Climbing", "Robin", 1);
+    public void Hero_InstantiatesCorrectly_true() throws Exception {
+        Hero myHero = new Hero("Me", 25, "Wits", "LWK", 1);
         assertTrue(myHero instanceof Hero);
     }
 
@@ -26,40 +26,27 @@ public class HeroTest {
     }
 
     @Test
-    public void addHeroToSquad() {
-        Squad squad = new Squad("testName","IP",12);
-        Hero hero = setUpNewHero();
-        assertTrue(true);
-    }
-
-    @Test
-    public void HeroInstantiatesWithName_true() throws Exception {
+    public void getName_HeroInstantiatesWithName_true() throws Exception {
         Hero myHero = setUpNewHero();
         assertEquals("Batman", myHero.getName());
     }
 
     @Test
-    public void HeroInstantiatesWithAge_32() throws Exception {
+    public void getAge_HeroInstantiatesWithAge_32() throws Exception {
         Hero myHero = setUpNewHero();
         assertEquals(32, myHero.getAge());
     }
 
     @Test
-    public void HeroInstantiatesWithSpecialPower_Sulking() throws Exception {
+    public void getSpecialPower_HeroInstantiatesWithSpecialPower_Sulking() throws Exception {
         Hero myHero = setUpNewHero();
         assertEquals("Sulking", myHero.getSpecialPower());
     }
 
     @Test
-    public void HeroInstantiatesWithWeakness_Robin() throws Exception {
+    public void getWeakness_HeroInstantiatesWithWeakness_Robin() throws Exception {
         Hero myHero = setUpNewHero();
         assertEquals("Robin", myHero.getWeakness());
-    }
-
-    @After
-    public void tearDown() throws Exception {
-        Hero.clearAllHeroes();
-
     }
 
     @Test

@@ -55,7 +55,7 @@ public class App {
             ArrayList<Hero> heroes = Hero.getAll();
             model.put("squads", squads);
             model.put("heroes",heroes);
-            return new ModelAndView(model, "view-squad.hbs");
+            return new ModelAndView(model, "view-squads.hbs");
         }), new HandlebarsTemplateEngine());
 
         //Show an individual squad
@@ -66,7 +66,7 @@ public class App {
             //ArrayList<Hero> heroes = Squad.get;
             model.put("squad", foundSquad);
 
-            return new ModelAndView(model, "view-squad-details.hbs");
+            return new ModelAndView(model, "squad-detail.hbs");
         }), new HandlebarsTemplateEngine());
 
         //get: Show a form to update a squad
@@ -132,7 +132,7 @@ public class App {
             int squadID = Integer.parseInt(request.params(":id"));
             Squad foundSquad = Squad.findById(squadID);
             model.put("heroes", foundSquad.getSquadMembers());
-            return new ModelAndView(model, "view-heroes.hbs");
+            return new ModelAndView(model, "view-hero.hbs");
         }), new HandlebarsTemplateEngine());
 
 
